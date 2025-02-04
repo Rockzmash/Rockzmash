@@ -17,3 +17,9 @@ f.close()
 f = open('public.key', 'w')
 f.write(public_text)
 f.close()
+
+Cipher_text = cipher.encrypt('This is a hidden message')
+
+f = open('secret_message', 'wb')
+f.write(Cipher_text)
+f.close()
