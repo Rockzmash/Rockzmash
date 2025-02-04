@@ -11,5 +11,9 @@ private_text = private_key.export_key().decode()
 public_text = public_key.export_key().decode()
 
 f = open('private.key', 'w')
-f.write(private_key)
+f.write(private_text)
+f.close()
+
+f = open('public.key', 'w')
+f.write(public_text)
 f.close()
